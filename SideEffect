@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+// Here we are defining the global variable
+var globalvariable int = 111
+
+func main() {
+	var localvariable int = 222
+	fmt.Printf("The Global variable glvariable's value is : %d\n",
+		globalvariable)
+	fmt.Printf("The Local variable  localvariable's value is : %d\n",
+		localvariable)
+	show()
+
+	show()
+}
+func show() {
+	fmt.Printf("The Global variable glvariable's value is : %d\n",
+		globalvariable)
+
+	globalvariable = globalvariable + 1
+}
